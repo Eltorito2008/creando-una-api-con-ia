@@ -1,0 +1,15 @@
+concesionario-profesional/
+├── app.py
+├── requirements.txt
+├── vercel.json
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── images/
+├── templates/
+│   ├── base.html
+│   ├── index.html
+│   ├── vehiculos.html
+│   ├── contacto.html
+│   └── acerca.html
+└── README.md

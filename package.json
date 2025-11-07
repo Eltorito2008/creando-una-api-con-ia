@@ -1,0 +1,14 @@
+{
+  "name": "concesionario-autos",
+  "version": "1.0.0",
+  "description": "Sistema de gestión para concesionario de autos",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

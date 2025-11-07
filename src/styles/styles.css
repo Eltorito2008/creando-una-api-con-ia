@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    font-size: 2.5em;
+}
+
+.form-section, .inventory-section {
+    padding: 30px;
+}
+
+.form-section {
+    background: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+#autoForm {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    align-items: end;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+button[type="submit"] {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+#cancelBtn {
+    background: #6c757d;
+    color: white;
+}
+
+.search-section {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.inventory-list {
+    display: grid;
+    gap: 15px;
+}
+
+.auto-card {
+    background: white;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 15px;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.auto-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.auto-info h3 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.auto-details {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.auto-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-edit {
+    background: #007bff;
+    color: white;
+    padding: 8px 15px;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: white;
+    padding: 8px 15px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        border-radius: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+        padding: 20px;
+    }
+    
+    .form-section, .inventory-section {
+        padding: 20px;
+    }
+    
+    #autoForm {
+        grid-template-columns: 1fr;
+    }
+    
+    .auto-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .auto-actions {
+        justify-content: center;
+    }
+}
